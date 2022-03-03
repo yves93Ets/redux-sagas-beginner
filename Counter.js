@@ -1,18 +1,10 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-const Counter = ({
-  value,
-  onIncrement,
-  onDecrement,
-  onIncrementAsync,
-  onDec,
-}) => (
+const Counter = ({ value, onIncrement, onDecrement }) => (
   <div>
-    <button onClick={onIncrementAsync}>Increment after 1 second</button>
     <button onClick={onIncrement}>Increment</button>{' '}
     <button onClick={onDecrement}>Decrement</button>
-    <button onClick={onDec}>onDec</button>
     <hr />
     <div>Clicked: {value} times</div>
   </div>
